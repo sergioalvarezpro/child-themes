@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Metamorphous';
+    src: url('Metamorphous.eot');
+    src: url('Metamorphous.eot?#iefix') format('embedded-opentype'),
+        url('Metamorphous.woff2') format('woff2'),
+        url('Metamorphous.woff') format('woff'),
+        url('Metamorphous.ttf') format('truetype'),
+        url('Metamorphous.svg#Metamorphous') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

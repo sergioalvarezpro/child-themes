@@ -1,0 +1,86 @@
+@charset "UTF-8";
+/*
+Theme Name:   Twenty Twenty One-Child
+Theme URI:    https://cafelog.studio
+Description:  Child theme para modificaciones varias
+Author:       Sergio Álvarez
+Author URI:   https://cafelog.studio
+Template:     twentytwentyone
+Version:      1.0.0
+License:      GNU General Public License v2 or later
+License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+Text Domain:  twentytwentyone-child
+*/
+
+
+/*General*/
+:root {
+    /* Font Family */
+    --wct23--font-primary: 'Metamorphous' !important;
+    --wct23--font-secondary: 'Source Sans 3' !important;
+
+    /*Font Size*/
+    --wct23--font-size-sm: clamp(0.9rem, 0.04vw + 0.89rem, 0.94rem);
+    --wct23--font-size-base: clamp(1.13rem, 0.14vw + 1.08rem, 1.25rem);
+    --wct23--font-size-md: clamp(1.41rem, 0.29vw + 1.32rem, 1.67rem);
+    --wct23--font-size-lg: clamp(1.76rem, 0.51vw + 1.6rem, 2.22rem);
+    --wct23--font-size-xl: clamp(2.2rem, 0.85vw + 1.94rem, 2.96rem);
+    --wct23--font-size-xxl: clamp(2.75rem, 1.33vw + 2.35rem, 3.95rem);
+    --wct23--font-size-xxxl: clamp(3.43rem, 2.03vw + 2.82rem, 5.26rem);
+
+    /*Colors*/
+    --wct23--color-naranja-aburrido: #BA9B2F;
+    --wct23--color-naranja-brillante: #F2C94C;
+    --wct23--color-naranja-vivido: #FFD200;
+    --wct23--color-naranja-ligero: #FFE87F;
+    --wct23--color-naranja-palido: #FFF7DA;
+    --wct23--color-gris-claro: #D9D9D9;
+    --wct23--color-rojo-aburrido: #9A2121;
+    --wct23--color-verde-grisaceo-oscuro: #263724;
+    --wct23--color-azul-oscuro: #0F3A4A;
+    --wct23--color-azul-cian-ligero: #82EEFD;
+
+    /*Colors Elements*/
+    --wct23--color-text: var(--wct23--color-azul-oscuro);
+    --wct23--color-border-button: var(--wct23--color-azul-oscuro);
+
+    /*Background-Color*/
+    --wct23--color-bg-primary: var(--wct23--color-cian-ligero);
+    --wct23--color-bg-secundary: var(--wct23--color-naranja-palido);
+    --wct23--color-bg-tertiary: var(--wct23--color-azul-oscuro);
+    --wct23--color-bg-button-CTA: var(--wct23--color-naranja-vivido);
+    --wct23--color-bg-button-CTA-hover: var(--wct23--color-naranja-ligero);
+    --wct23--color-bg-button-Participa: var(--wct23--color-naranja-palido);
+    --wct23--color-bg-button-Participa-hover: var(--wct23--color-naranja-brillante);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+}
+
+/** Elimina separacion de bloques del tema **/
+:where(.wp-block-columns.is-layout-flex) {
+    gap: 0;
+}
+
+.site-main>article>*,
+.site-main>.not-found>*,
+.entry-content>*,
+[class*="inner-container"]>*,
+.wp-block-template-part>*,
+.wp-block-post-template :where(li > *) {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.site-main {
+    padding: 0;
+}
